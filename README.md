@@ -28,7 +28,7 @@ class Demo(Scene):
 ```
 
 ## تراز بندی متن از راست به چپ
-Pour gérer plusieurs lignes :
+برای ایجاد متن بلند :
 
 ```python
 from manim_fa.layout import arrange_rtl
