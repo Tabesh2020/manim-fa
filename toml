@@ -1,0 +1,19 @@
+[project]
+name = "manim-fa"
+version = "0.2.0"
+description = "افزونه مانیم برای متن فارسی (RTL) با پشتیبانی از فونت فارسی."
+authors = [
+  { name = "Tabesh", email = "tabesh_ali@yahoo.com" }
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["manim"]
+
+[project.urls]
+Homepage = "https://github.com/Tabesh2020/manim-fa"
+Repository = "https://github.com/Tabesh2020/manim-fa"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

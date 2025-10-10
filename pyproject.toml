@@ -1,0 +1,17 @@
+[project]
+name = "manim-fa"
+version = "0.1.0"
+description = "Manim plugin for Persian text (RTL) with transliteration"
+authors = [{name = "ایمیل من", email = "tabesh_ali@yahoo.com"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["manim"]
+
+[project.urls]
+Homepage = "https://github.com/Tabesh2020/manim-fa"
+Repository = "https://github.com/Tabesh2020/manim-fa"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
