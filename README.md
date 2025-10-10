@@ -14,13 +14,13 @@ pip install manim-fa
 from manim import *
 from manim_fa import create_fa_text
 
-class Demo(Scene):
+class Test(Scene):
     def construct(self):
         # ایجاد متن مستقیم فارسی
-        t1 = create_fa_text(".سلام بر کاربر گرامی، این یک افزونه فارسی ساز در مانیم هست", color="BLUE", font_size=70)
+        t1 = create_fa_text("سلام برشما کاربر گرامی!", color="BLUE", font_size=70)
         
         # قابلیت آوا نگاری از فنگلش به فارسی
-        t2 = create_fa_text("Salam bar shoma karbare manim fa", translit=True, color="GREEN", font_size=70)
+        t2 = create_fa_text("Slam br shma karbre manim farsi", translit=True, color="GREEN", font_size=70)
         
         self.play(Write(t1))
         self.play(Transform(t1, t2))
