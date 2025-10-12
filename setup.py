@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="manim-fa",
-    version="0.3.3",
+    version="0.3.1.post1",
     packages=find_packages(),
     install_requires=[
         "manim>=0.17.0",
