@@ -1,3 +1,15 @@
+def translit_to_fa(text):
+    mapping = {
+        "salam": "سلام",
+        "donya": "دنیا",
+        "chetori": "چطوری",
+        "manim": "مانیم",
+        
+    }
+    for en, fa in mapping.items():
+        text = text.replace(en, fa)
+    return text
+
 LATIN_TO_PERSIAN = {
     "kh": "خ", "gh": "غ", "ch": "چ", "sh": "ش", "th": "ث",
     "a": "ا", "b": "ب", "c": "ک", "d": "د", "e": "ِ", "f": "ف", "g": "گ",
