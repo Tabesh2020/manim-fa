@@ -2,7 +2,7 @@ import os
 import platform
 from pathlib import Path
 
-_DEFAULT_FONTS = ["IRLotus", "XB Niloofar", "Vazir", "Ordibehesht","Tahoma"]
+_DEFAULT_FONTS = ["IrTitr", "Ordibehesht", "IRXLotus", "IRTabassom", "IRDastNevis", "IREntezar", "Behistun", "IRKamran", "IRMaryam", "Shekasteh_Beta", "IRAmir", "IranNastaliq-Web"]
 
 def _font_installed(font_name: str) -> bool:
     system = platform.system()
