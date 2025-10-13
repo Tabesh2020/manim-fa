@@ -44,8 +44,12 @@ class Test(Scene):
         self.play(Write(t1))
         self.play(Transform(t1, t2))
         self.wait(2)
+
 ```
+```python
 🔹 تگ‌های پشتیبانی‌شده: <b>, <i>, <color=color_name_or_hex>, <font=font_name>, <size=number>
+        
+```
 
 ##    🔹 استفاده از FaParagraph (متن طولانی چندخطی)
 
