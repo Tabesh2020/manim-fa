@@ -41,3 +41,5 @@ def FaText(
         text.submobjects.reverse()
 
     return text
+
+## فایل اصلی پلاگین مانیم-فا

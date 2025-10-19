@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="manim-fa",
-    version="0.3.4",
+    version="0.3.6",
     packages=find_packages(),
     install_requires=["manim>=0.19.0"],
     
@@ -18,3 +18,5 @@ setup(
         "Operating System :: OS Independent",
     ],
 )
+
+

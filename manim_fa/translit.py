@@ -219,3 +219,5 @@ if __name__ == "__main__":
     ]
     for ex in examples:
         print(f"{ex!r} -> {translit_to_fa(ex)}")
+
+# تابع فنگلش به فارسی

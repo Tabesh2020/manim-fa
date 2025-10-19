@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "manim-fa"
-version = "0.3.4"
+version = "0.3.6"
 description = "افزونه‌ی مانیم برای نمایش متن فارسی (راست به چپ) با قابلیت تبدیل خودکار از حروف لاتین به فارسی"
 readme = "README.md"
 requires-python = ">=3.8"

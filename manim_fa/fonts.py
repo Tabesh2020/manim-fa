@@ -1,4 +1,5 @@
-# manim_fa/fonts.py
+# manim_fa/fonts.py بسته فونت فارسی
+
 from matplotlib import font_manager
 
 # لیست فونت‌های فارسی پیش‌فرض که پلاگین از آن‌ها استفاده می‌کند
