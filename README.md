@@ -27,6 +27,11 @@ class SimpleDemo_01(Scene):
         t = FaText("به مانیم فارسی خوش آمدید!", font_size=50, font="IRLotus")
         self.play(Write(t))
         self.wait(1)
+        
+<video width="400" controls>
+  <source src="https://github.com/Tabesh2020/manim-fa/raw/main/videos/SimpleDemo_01.mp4" type="video/mp4">
+  مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+</video>
 
 ```
 ---
