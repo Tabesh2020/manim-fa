@@ -24,9 +24,10 @@ from manim_fa import FaText
 
 class SimpleDemo_01(Scene):
     def construct(self):
-        t = FaText("به مانیم فارسی خوش آمدید!", font_size=50)
+        t = FaText("به مانیم فارسی خوش آمدید!", font_size=50, font="IRLotus")
         self.play(Write(t))
         self.wait(1)
+
 ```
 ---
 ### 🔹 مثال ۲ — متن رنگی 
@@ -36,7 +37,7 @@ from manim_fa import FaText
 
 class SimpleDemo_02(Scene):
     def construct(self):
-        t = FaText("به مانیم خوش آمدید. متن رنگی!", color=YELLOW, font_size=60)
+        t = FaText("به مانیم خوش آمدید. متن رنگی!", color=YELLOW, font="IRLotus", font_size=60)
         self.play(Write(t))
         self.wait(1)
         self.play(t.animate.set_color(RED))
@@ -50,7 +51,7 @@ from manim_fa import FaText
 
 class SimpleDemo_03(Scene):
     def construct(self):
-        t = FaText("نوشتن خط نستعلیق در مانیم", font="IranNastaliq", rtl=True)
+        t = FaText("نوشتن خط نستعلیق در مانیم", font="IranNastaliq", rtl=True, font_size=87)
         self.play(Write(t))
         self.wait(2)
 ```
@@ -62,7 +63,7 @@ from manim_fa import FaText
 
 class SimpleDemo_04(Scene):
     def construct(self):
-        t = FaText("Ba Manim khosh Amadid", translit=True, color=BLUE)
+        t = FaText("Tbdil mtne Finglish beh Farsi", translit=True, color=BLUE, font= "IRLotus", font_size=60)
         self.play(Write(t))
         self.wait(2)
 ```
@@ -124,13 +125,13 @@ from manim_fa import FaText
 class ComplexDemo(Scene):
     def construct(self):
         # --- 1️⃣ نمایش متن خوش‌آمد ---
-        text1 = FaText("به مانیم فارسی خوش آمدید.", font_size=48, color=BLUE)
+        text1 = FaText("به مانیم فارسی خوش آمدید.", font_size=48, color=BLUE, font="Ordibehesht")
         text1.to_edge(UP)
         self.play(Write(text1))
         self.wait(1)
 
         # --- 2️⃣ نمایش جمله دوم ---
-        text2 = FaText("این یک مستطیل هست.", font_size=42, color=WHITE)
+        text2 = FaText("این یک مستطیل هست.", font_size=42, color=WHITE, font="IRLotus")
         text2.next_to(text1, DOWN, buff=0.8)
         self.play(Write(text2))
         self.wait(1)
@@ -155,7 +156,7 @@ class ComplexDemo(Scene):
         # --- 5️⃣ تغییر جمله دوم به "این یک مثلث هست." با فونت نستعلیق ---
         new_text2 = FaText(
             "این یک مثلث هست.",
-            font_size=42,
+            font_size=60,
             font="IranNastaliq",
             color=GREEN
         )
@@ -166,6 +167,7 @@ class ComplexDemo(Scene):
         # --- 6️⃣ افکت پایانی ---
         self.play(FadeOut(text1), FadeOut(text2), FadeOut(rect))
         self.wait(1)
+
 
 ```
 ---
