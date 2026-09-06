@@ -69,6 +69,36 @@ t = FaText("این متن ==هایلایت== و **بولد** دارد.")
 self.play(fa_write(t, run_time=3))
 ```
 
+
+## 🌀 فهرست کامل انیمیشن‌های کاربردی در Manim
+
+| نام انیمیشن | کاربرد | مثال |
+|--------------|---------|-------|
+| `Write()` | نوشتن تدریجی متن | `self.play(Write(t))` |
+| `Create()` | رسم کامل یک شیء از ابتدا | `self.play(Create(circle))` |
+| `FadeIn()` | ظاهر شدن تدریجی شیء | `self.play(FadeIn(t))` |
+| `FadeOut()` | محو شدن تدریجی شیء | `self.play(FadeOut(t))` |
+| `FadeToColor()` | تغییر رنگ شیء با انیمیشن نرم | `self.play(FadeToColor(t, RED))` |
+| `Transform()` | تبدیل یک شیء به شیء دیگر | `self.play(Transform(t1, t2))` |
+| `ReplacementTransform()` | جایگزینی تدریجی یک شیء با دیگری | `self.play(ReplacementTransform(t1, t2))` |
+| `Rotate()` | چرخش شیء به اندازه مشخص | `self.play(Rotate(t, angle=PI/2))` |
+| `ScaleInPlace()` | بزرگ یا کوچک شدن در محل فعلی | `self.play(t.animate.scale(1.5))` |
+| `MoveAlongPath()` | حرکت شیء روی مسیر مشخص | `self.play(MoveAlongPath(t, circle))` |
+| `Circumscribe()` | ترسیم حاشیه دور شیء | `self.play(Circumscribe(t))` |
+| `GrowFromCenter()` | رشد شیء از مرکز | `self.play(GrowFromCenter(t))` |
+| `ShrinkToCenter()` | جمع شدن شیء به مرکز | `self.play(ShrinkToCenter(t))` |
+| `Wiggle()` | لرزش یا تکان نرم | `self.play(Wiggle(t))` |
+| `FocusOn()` | فوکوس با تغییر نور یا رنگ | `self.play(FocusOn(t))` |
+| `Flash()` | درخشش سریع در محل شیء | `self.play(Flash(t))` |
+| `Indicate()` | نمایش تأکید با رنگ و مقیاس | `self.play(Indicate(t))` |
+| `ApplyWave()` | حرکت موجی روی شیء | `self.play(ApplyWave(t))` |
+| `ApplyMethod()` | اجرای متد خاص روی شیء | `self.play(ApplyMethod(t.shift, UP))` |
+| `animate.shift()` | جابه‌جایی شیء | `self.play(t.animate.shift(UP))` |
+| `animate.set_color()` | تغییر رنگ شیء | `self.play(t.animate.set_color(BLUE))` |
+| `animate.rotate()` | چرخش با انیمیشن نرم | `self.play(t.animate.rotate(PI/3))` |
+
+---
+
 ## سایر امکانات
 
 ### متن ترکیبی (فارسی + انگلیسی + عدد)
