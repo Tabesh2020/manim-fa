@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manim-fa"
+version = "1.1.1"
+description = "افزونه‌ی مانیم برای نمایش صحیح متن فارسی (راست‌به‌چپ) با فونت داخلی، تبدیل فینگلیش، و قالب‌بندیِ بولد/ایتالیک/زیرخط/هایلایت"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "علی تابش", email = "tabesh_ali@yahoo.com" }
+]
+dependencies = [
+    "manim>=0.18.0",
+    "manimpango>=0.5.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tabesh2020/manim-fa"
+Repository = "https://github.com/Tabesh2020/manim-fa"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["manim_fa*"]
+
+[tool.setuptools.package-data]
+manim_fa = ["fonts_data/*.ttf", "fonts_data/OFL.txt"]
